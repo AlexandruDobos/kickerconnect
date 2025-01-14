@@ -1,15 +1,7 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
-node_modules/
-build/
-
-# Expo
-.expo/
-dist/
-web-build/
-
-# Native
+# General
+HELP.md
+.DS_Store
+*.pem
 *.orig.*
 *.jks
 *.p8
@@ -17,26 +9,58 @@ web-build/
 *.key
 *.mobileprovision
 
+# Local environment files
+.env*.local
+
+# Dependencies
+node_modules/
+build/
+dist/
+web-build/
+
 # Metro
 .metro-health-check*
 
-# debug
+# Debug
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
+# Typescript
 *.tsbuildinfo
 
-# Java/IntelliJ (Backend)
-out/
-*.iml
-.idea/
+# Expo
+.expo/
+
+# Backend-specific (Java, IntelliJ, Maven)
 target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+.mvn/wrapper/maven-wrapper.jar
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.idea/
+*.iml
+*.ipr
+*.iws
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+out/
+
+# Frontend-specific (VS Code, Node.js)
+.vscode/
+
+# Ignoring build output (both frontend and backend)
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Learn more about .gitignore: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
