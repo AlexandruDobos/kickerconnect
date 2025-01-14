@@ -2,6 +2,7 @@
 
 # dependencies
 node_modules/
+build/
 
 # Expo
 .expo/
@@ -33,3 +34,9 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Java/IntelliJ (Backend)
+out/
+*.iml
+.idea/
+target/
