@@ -1,6 +1,5 @@
-export const ip = "192.168.180.200"
-//"192.168.1.131"; - buc
-//"192.168.1.3" - izv
+export const ip = //put your ip here
+
 export const port = "8000"
 export const chatPort="8001"
 export const profilePort = "8000"
